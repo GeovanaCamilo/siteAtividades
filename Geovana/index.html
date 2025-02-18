@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geovana Camilo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .exercicio {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .exercicio {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Atividades </h1>
+
+    <!-- Exercício 1: Soma de Dois Números -->
+    <div class="exercicio">
+        <h2>Exercício 1: Soma de Dois Números</h2>
+        <p>Clique no botão abaixo para calcular a soma de dois números.</p>
+        <button onclick="calcularSoma()">Calcular Soma</button>
+        <p id="resultadoSoma"></p>
+    </div>
+
+    <!-- Exercício 2: Média de Três Notas -->
+    <div class="exercicio">
+        <h2>Exercício 2: Média de Três Notas</h2>
+        <p>Clique no botão abaixo para calcular a média de três notas.</p>
+        <button onclick="calcularMedia()">Calcular Média</button>
+        <p id="resultadoMedia"></p>
+    </div>
+
+    <!-- Exercício 3: Aprovado ou Reprovado -->
+    <div class="exercicio">
+        <h2>Exercício 3: Aprovado ou Reprovado</h2>
+        <p>Clique no botão abaixo para verificar se você foi aprovado.</p>
+        <button onclick="verificarAprovacao()">Verificar Aprovação</button>
+        <p id="resultadoAprovacao"></p>
+    </div>
+
+    <!-- Exercício 4: Escolhendo Itens -->
+    <div class="exercicio">
+        <h2>Exercício 4: Escolhendo Itens</h2>
+        <p>Clique no botão abaixo para escolher um item.</p>
+        <button onclick="escolherItem()">Escolher Item</button>
+        <p id="resultadoItem"></p>
+    </div>
+
+    <!-- Exercício 5: Verificando Maior de Idade -->
+    <div class="exercicio">
+        <h2>Exercício 5: Verificando Maior de Idade</h2>
+        <p>Clique no botão abaixo para verificar se você é maior de idade.</p>
+        <button onclick="verificarMaioridade()">Verificar Maioridade</button>
+        <p id="resultadoMaioridade"></p>
+    </div>
+
+    <!-- Exercício 6: Cálculo de Desconto e Benefícios -->
+    <div class="exercicio">
+        <h2>Exercício 6: Cálculo de Desconto e Benefícios</h2>
+        <p>Clique no botão abaixo para calcular o desconto.</p>
+        <button onclick="calcularDesconto()">Calcular Desconto</button>
+        <p id="resultadoDesconto"></p>
+    </div>
+
+    <!-- Exercício 7: Cadastro de Alunos -->
+    <div class="exercicio">
+        <h2>Exercício 7: Cadastro de Alunos</h2>
+        <p>Clique no botão abaixo para cadastrar alunos.</p>
+        <button onclick="cadastrarAlunos()">Cadastrar Alunos</button>
+        <p id="resultadoAlunos"></p>
+    </div>
+
+    <!-- Exercício 8: Catálogo de Filmes -->
+    <div class="exercicio">
+        <h2>Exercício 8: Catálogo de Filmes</h2>
+        <p>Clique no botão abaixo para filtrar filmes por gênero.</p>
+        <button onclick="filtrarFilmes()">Filtrar Filmes</button>
+        <p id="resultadoFilmes"></p>
+    </div>
+
+    <!-- Exercício 9: Carrinho de Compras -->
+    <div class="exercicio">
+        <h2>Exercício 9: Carrinho de Compras</h2>
+        <button onclick="adicionarProdutos()">Adicionar Produtos</button>
+        <button onclick="calcularCarrinho()">Calcular Total</button>
+        <p id="listaProdutos"></p> <!-- Exibição dos produtos -->
+        <p id="resultadoCarrinho"></p> <!-- Exibição do total -->
+    </div>
+
+    <!-- Exercício 10: Contagem Crescente -->
+    <div class="exercicio">
+        <h2>Exercício 10: Contagem Crescente</h2>
+        <p>Clique no botão abaixo para contar de 1 até o número informado.</p>
+        <button onclick="contagemCrescente()">Contagem Crescente</button>
+        <p id="resultadoContagem"></p>
+    </div>
+
+    <!-- Exercício 11: Calculadora Simples -->
+    <div class="exercicio">
+        <h2>Exercício 11: Calculadora Simples</h2>
+        <p>Clique no botão abaixo para realizar uma operação matemática.</p>
+        <button onclick="calculadoraSimples()">Calculadora Simples</button>
+        <p id="resultadoCalculadora"></p>
+    </div>
+
+    <script>
+        // Função para o Exercício 1: Soma de Dois Números
+        function calcularSoma() {
+            var num1 = prompt("Digite o primeiro número:");
+            var num2 = prompt("Digite o segundo número:");
+            var soma = parseFloat(num1) + parseFloat(num2);
+            document.getElementById("resultadoSoma").innerText = "A soma é: " + soma;
+        }
+
+        // Função para o Exercício 2: Média de Três Notas
+        function calcularMedia() {
+            var nota1 = prompt("Digite a primeira nota:");
+            var nota2 = prompt("Digite a segunda nota:");
+            var nota3 = prompt("Digite a terceira nota:");
+            var media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3)) / 3;
+            document.getElementById("resultadoMedia").innerText = "A média é: " + media.toFixed(2);
+        }
+
+        // Função para o Exercício 3: Aprovado ou Reprovado
+        function verificarAprovacao() {
+            var nota = parseFloat(prompt("Digite sua nota (de 0 a 10):"));
+            if (nota >= 7) {
+                document.getElementById("resultadoAprovacao").innerText = "Aprovado!";
+            } else {
+                document.getElementById("resultadoAprovacao").innerText = "Reprovado.";
+            }
+        }
+
+        // Função para o Exercício 4: Escolhendo Itens
+        function escolherItem() {
+            var codigo = parseInt(prompt("Digite um número de 1 a 10:"));
+            var item;
+            switch (codigo) {
+                case 1:
+                    item = "Refrigerante XXX";
+                    break;
+                case 2:
+                    item = "Leite";
+                    break;
+                case 3:
+                    item = "Pão";
+                    break;
+                case 4:
+                    item = "Queijo";
+                    break;
+                case 5:
+                    item = "Presunto";
+                    break;
+                case 6:
+                    item = "Água";
+                    break;
+                case 7:
+                    item = "Suco";
+                    break;
+                case 8:
+                    item = "Chocolate";
+                    break;
+                case 9:
+                    item = "Biscoito";
+                    break;
+                case 10:
+                    item = "Iogurte";
+                    break;
+                default:
+                    item = "Código inválido";
+            }
+            document.getElementById("resultadoItem").innerText = "Item escolhido: " + item;
+        }
+
+        // Função para o Exercício 5: Verificando Maior de Idade
+        function verificarMaioridade() {
+            var idade = parseInt(prompt("Digite sua idade:"));
+            var resultado = (idade >= 18) ? "Você é maior de idade." : "Você é menor de idade.";
+            document.getElementById("resultadoMaioridade").innerText = resultado;
+        }
+
+        // Função para o Exercício 6: Cálculo de Desconto e Benefícios
+        function calcularDesconto() {
+            var valorCompra = parseFloat(prompt("Digite o valor total da compra:"));
+            var tipoAssinatura = prompt("Digite o tipo de assinatura (silver, gold ou platinum):").toLowerCase();
+            var desconto = 0;
+
+            switch (tipoAssinatura) {
+                case "silver":
+                    desconto = 0.05;
+                    break;
+                case "gold":
+                    desconto = 0.10;
+                    break;
+                case "platinum":
+                    desconto = 0.15;
+                    break;
+                default:
+                    desconto = 0;
+            }
+
+            var valorFinal = valorCompra - (valorCompra * desconto);
+            var mensagem = "Valor final da compra: R$ " + valorFinal.toFixed(2);
+
+            if (valorFinal > 300) {
+                mensagem += " - Você ganhou um brinde especial!";
+            }
+
+            document.getElementById("resultadoDesconto").innerText = mensagem;
+        }
+
+        // Função para o Exercício 7: Cadastro de Alunos
+        function cadastrarAlunos() {
+            var alunos = [];
+            while (true) {
+                var nome = prompt("Digite o nome do aluno (ou 'sair' para encerrar):");
+                if (nome.toLowerCase() === "sair") break;
+                var idade = parseInt(prompt("Digite a idade do aluno:"));
+                var turma = prompt("Digite a turma do aluno:");
+                alunos.push({ nome: nome, idade: idade, turma: turma });
+            }
+            var resultado = "Lista de Alunos:<br>";
+            alunos.forEach(function(aluno) {
+                resultado += `Nome: ${aluno.nome}, Idade: ${aluno.idade}, Turma: ${aluno.turma}<br>`;
+            });
+            document.getElementById("resultadoAlunos").innerHTML = resultado;
+        }
+
+        // Função para o Exercício 8: Catálogo de Filmes
+        function filtrarFilmes() {
+            var catalogo = [
+                { titulo: "Filme 1", ano: 2020, genero: "Ação" },
+                { titulo: "Filme 2", ano: 2019, genero: "Comédia" },
+                { titulo: "Filme 3", ano: 2021, genero: "Ação" },
+                { titulo: "Filme 4", ano: 2018, genero: "Drama" },
+                { titulo: "Filme 5", ano: 2022, genero: "Comédia" }
+            ];
+            var genero = prompt("Digite o gênero do filme (Ação, Comédia, Drama):");
+            var filmesFiltrados = catalogo.filter(function(filme) {
+                return filme.genero.toLowerCase() === genero.toLowerCase();
+            });
+            var resultado = filmesFiltrados.length > 0 ? "Filmes encontrados:<br>" : "Nenhum filme deste gênero foi encontrado.<br>";
+            filmesFiltrados.forEach(function(filme) {
+                resultado += `Título: ${filme.titulo}, Ano: ${filme.ano}, Gênero: ${filme.genero}<br>`;
+            });
+            document.getElementById("resultadoFilmes").innerHTML = resultado;
+        }
+    
+        function adicionarProdutos() {
+            carrinho = []; // Limpa o carrinho antes de adicionar novos produtos
+            for (var i = 1; i <= 3; i++) {
+                var produto = prompt("Digite o nome do produto " + i + ":");
+                var quantidade = parseInt(prompt("Digite a quantidade do produto " + i + ":"));
+                var precoUnitario = parseFloat(prompt("Digite o preço unitário do produto " + i + ":"));
+
+                // Verifica se os valores são válidos
+                if (!produto || isNaN(quantidade) || isNaN(precoUnitario) || quantidade <= 0 || precoUnitario <= 0) {
+                    alert("Dados inválidos! Por favor, insira valores válidos.");
+                    i--; // Repete a entrada se for inválida
+                    continue;
+                }
+
+                carrinho.push({ produto: produto, quantidade: quantidade, precoUnitario: precoUnitario });
+            }
+
+            atualizarListaProdutos();
+            alert("3 produtos foram adicionados ao carrinho!");
+        }
+
+        function atualizarListaProdutos() {
+            var listaTexto = "<strong>Produtos no Carrinho:</strong><br>";
+            carrinho.forEach(function(item) {
+                listaTexto += `${item.produto} - ${item.quantidade}x R$ ${item.precoUnitario.toFixed(2)}<br>`;
+            });
+            document.getElementById("listaProdutos").innerHTML = listaTexto;
+        }
+
+        function calcularCarrinho() {
+            if (carrinho.length < 3) {
+                alert("Você precisa adicionar no mínimo 3 produtos antes de calcular.");
+                return;
+            }
+
+            var total = carrinho.reduce(function(acc, item) {
+                return acc + (item.quantidade * item.precoUnitario);
+            }, 0);
+
+            var resultadoTexto = "<strong>Detalhes do Carrinho:</strong><br>";
+            carrinho.forEach(function(item) {
+                var totalItem = item.quantidade * item.precoUnitario;
+                resultadoTexto += `${item.produto} - ${item.quantidade}x R$ ${item.precoUnitario.toFixed(2)} = R$ ${totalItem.toFixed(2)}<br>`;
+            });
+
+            if (total > 200) {
+                var desconto = total * 0.10;
+                total -= desconto;
+                resultadoTexto += `<br><strong>Desconto aplicado: R$ ${desconto.toFixed(2)}</strong><br>`;
+            }
+
+            resultadoTexto += `<br><strong>Total a pagar: R$ ${total.toFixed(2)}</strong>`;
+            document.getElementById("resultadoCarrinho").innerHTML = resultadoTexto;
+        }
+
+        // Função para o Exercício 10: Contagem Crescente
+        function contagemCrescente() {
+            var numero = parseInt(prompt("Digite um número inteiro positivo:"));
+            var resultado = "Contagem crescente:<br>";
+            for (var i = 1; i <= numero; i++) {
+                resultado += i + "<br>";
+            }
+            document.getElementById("resultadoContagem").innerHTML = resultado;
+        }
+
+        // Função para o Exercício 11: Calculadora Simples
+        function calculadoraSimples() {
+            var num1 = parseFloat(prompt("Digite o primeiro número:"));
+            var num2 = parseFloat(prompt("Digite o segundo número:"));
+            var operacao = prompt("Digite a operação (+, -, *, /):");
+            var resultado;
+            switch (operacao) {
+                case "+":
+                    resultado = num1 + num2;
+                    break;
+                case "-":
+                    resultado = num1 - num2;
+                    break;
+                case "*":
+                    resultado = num1 * num2;
+                    break;
+                case "/":
+                    resultado = num1 / num2;
+                    break;
+                default:
+                    resultado = "Operação inválida.";
+            }
+            document.getElementById("resultadoCalculadora").innerText = "Resultado: " + resultado;
+        }
+    </script>
+</body>
+</html>
